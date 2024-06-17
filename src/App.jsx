@@ -2,6 +2,7 @@ import { Box, Flex, Heading, Link } from "@chakra-ui/react";
 import { Route, BrowserRouter as Router, Routes, Link as RouterLink } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Index from "./pages/Index.jsx";
+import Shop from "./pages/Shop.jsx";
 
 const NavBar = () => (
   <Box bg="teal.500" px={4} py={2}>
@@ -33,6 +34,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Index />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </Router>
   );
