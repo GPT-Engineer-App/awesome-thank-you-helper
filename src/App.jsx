@@ -1,7 +1,6 @@
 import { Box, Flex, Heading, Link, Stack, IconButton, useDisclosure } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { FaBars, FaTimes, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Route, BrowserRouter as Router, Routes, Link as RouterLink } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Index from "./pages/Index.jsx";
 import Shop from "./pages/Shop.jsx";
 
@@ -14,7 +13,7 @@ const NavBar = () => {
         <Heading as="h1" size="lg" color="white">Knock Streetwear</Heading>
         <IconButton
           size="md"
-          icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+          icon={isOpen ? <FaTimes /> : <FaBars />}
           aria-label="Open Menu"
           display={{ md: "none" }}
           onClick={isOpen ? onClose : onOpen}
