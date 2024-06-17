@@ -13,6 +13,7 @@ const colors = {
 
 const theme = extendTheme({ colors });
 
+document.title = "Knock Streetwear";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
