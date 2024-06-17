@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaFacebook, FaInstagram, FaTwitter } from 'react-icons
 import { Route, BrowserRouter as Router, Routes, Link as RouterLink } from "react-router-dom";
 import Index from "./pages/Index.jsx";
 import Shop from "./pages/Shop.jsx";
+import BackgroundMusic from "./components/BackgroundMusic.jsx"; // Import BackgroundMusic component
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -53,6 +54,7 @@ function App() {
   return (
     <Router>
       <NavBar />
+      <BackgroundMusic /> {/* Add BackgroundMusic component */}
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route path="/shop" element={<Shop />} />
