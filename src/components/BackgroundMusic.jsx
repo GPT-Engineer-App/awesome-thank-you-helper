@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Howl, Howler } from 'react-howler';
+import ReactHowler from 'react-howler';
 import { IconButton } from '@chakra-ui/react';
 import { FaPlay, FaPause } from 'react-icons/fa';
 
@@ -12,7 +12,7 @@ const BackgroundMusic = () => {
 
   return (
     <div>
-      <Howl
+      <ReactHowler
         src="/path/to/your/music/file.mp3"
         playing={isPlaying}
         loop={true}
