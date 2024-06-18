@@ -1,4 +1,4 @@
-import { Container, Text, VStack, Heading, Box, Image, Button } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, Image, Button, SimpleGrid } from "@chakra-ui/react";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Shop = () => {
@@ -16,6 +16,33 @@ const Shop = () => {
           Start Shopping
         </Button>
       </VStack>
+
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} mt={10}>
+        <Box>
+          <Heading as="h2" size="lg" color="teal.300">Hoodies</Heading>
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
+            <Text>Placeholder for hoodies images and descriptions.</Text>
+          </Box>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" color="teal.300">Pants</Heading>
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
+            <Text>Placeholder for pants images and descriptions.</Text>
+          </Box>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" color="teal.300">Shirts</Heading>
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
+            <Text>Placeholder for shirts images and descriptions.</Text>
+          </Box>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" color="teal.300">Jerseys</Heading>
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
+            <Text>Placeholder for jerseys images and descriptions.</Text>
+          </Box>
+        </Box>
+      </SimpleGrid>
     </Container>
   );
 };
