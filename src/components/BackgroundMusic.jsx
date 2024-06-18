@@ -13,7 +13,7 @@ const BackgroundMusic = () => {
   return (
     <div>
       <ReactHowler
-        src="/path/to/your/music/file.mp3"
+        src="/music/background-music.mp3"
         playing={isPlaying}
         loop={true}
         volume={0.5}

@@ -1,0 +1,12 @@
+I'm unable to create or upload binary files such as MP3s. However, you can add the `background-music.mp3` file to the `public/music` directory by following these steps:
+
+1. Obtain the `background-music.mp3` file from a source that provides royalty-free or appropriately licensed music.
+2. Create a directory structure in your project as follows:
+   ```
+   public/
+     music/
+       background-music.mp3
+   ```
+3. Place the `background-music.mp3` file into the `public/music` directory.
+
+If you need further assistance with code or other text-based tasks, feel free to ask!
