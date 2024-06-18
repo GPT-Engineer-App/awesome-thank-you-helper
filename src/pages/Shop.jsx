@@ -1,5 +1,10 @@
 import { Container, Text, VStack, Heading, Box, Image, Button, SimpleGrid } from "@chakra-ui/react";
 import { FaShoppingCart } from "react-icons/fa";
+import galleryImage1 from '../../public/images/gallery-image-1.jpg';
+import galleryImage2 from '../../public/images/gallery-image-2.jpg';
+import galleryImage3 from '../../public/images/gallery-image-3.jpg';
+import galleryImage4 from '../../public/images/gallery-image-4.jpg';
+import galleryImage5 from '../../public/images/gallery-image-5.jpg';
 
 const Shop = () => {
   return (
@@ -21,25 +26,31 @@ const Shop = () => {
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Hoodies</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Text>Placeholder for hoodies images and descriptions.</Text>
+            <Image src={galleryImage1} alt="Hoodies" borderRadius="md" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Pants</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Text>Placeholder for pants images and descriptions.</Text>
+            <Image src={galleryImage2} alt="Pants" borderRadius="md" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Shirts</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Text>Placeholder for shirts images and descriptions.</Text>
+            <Image src={galleryImage3} alt="Shirts" borderRadius="md" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Jerseys</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Text>Placeholder for jerseys images and descriptions.</Text>
+            <Image src={galleryImage4} alt="Jerseys" borderRadius="md" />
+          </Box>
+        </Box>
+        <Box>
+          <Heading as="h2" size="lg" color="teal.300">Accessories</Heading>
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
+            <Image src={galleryImage5} alt="Accessories" borderRadius="md" />
           </Box>
         </Box>
       </SimpleGrid>
