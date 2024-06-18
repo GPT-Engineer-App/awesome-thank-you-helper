@@ -27,36 +27,36 @@ const Shop = () => {
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Hoodies</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
-          <Image src={galleryImage1} alt="Hoodies" borderRadius="md" />
-          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
+            <Image src={galleryImage1} alt="Hoodies" borderRadius="md" />
+            <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Pants</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
-          <Image src={galleryImage2} alt="Pants" borderRadius="md" />
-          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
+            <Image src={galleryImage2} alt="Pants" borderRadius="md" />
+            <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Shirts</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
-          <Image src={galleryImage3} alt="Shirts" borderRadius="md" />
-          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
+            <Image src={galleryImage3} alt="Shirts" borderRadius="md" />
+            <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Jerseys</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
-          <Image src={galleryImage4} alt="Jerseys" borderRadius="md" />
-          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
+            <Image src={galleryImage4} alt="Jerseys" borderRadius="md" />
+            <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Accessories</Heading>
           <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
-          <Image src={galleryImage5} alt="Accessories" borderRadius="md" />
-          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
+            <Image src={galleryImage5} alt="Accessories" borderRadius="md" />
+            <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
       </SimpleGrid>
