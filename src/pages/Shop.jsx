@@ -5,6 +5,7 @@ import galleryImage2 from '../../public/images/gallery-image-2.jpg';
 import galleryImage3 from '../../public/images/gallery-image-3.jpg';
 import galleryImage4 from '../../public/images/gallery-image-4.jpg';
 import galleryImage5 from '../../public/images/gallery-image-5.jpg';
+import logoSleeve from '../../public/images/logo-sleeve.png';
 
 const Shop = () => {
   return (
@@ -25,32 +26,37 @@ const Shop = () => {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} mt={10}>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Hoodies</Heading>
-          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Image src={galleryImage1} alt="Hoodies" borderRadius="md" />
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
+          <Image src={galleryImage1} alt="Hoodies" borderRadius="md" />
+          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Pants</Heading>
-          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Image src={galleryImage2} alt="Pants" borderRadius="md" />
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
+          <Image src={galleryImage2} alt="Pants" borderRadius="md" />
+          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Shirts</Heading>
-          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Image src={galleryImage3} alt="Shirts" borderRadius="md" />
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
+          <Image src={galleryImage3} alt="Shirts" borderRadius="md" />
+          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Jerseys</Heading>
-          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Image src={galleryImage4} alt="Jerseys" borderRadius="md" />
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
+          <Image src={galleryImage4} alt="Jerseys" borderRadius="md" />
+          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
         <Box>
           <Heading as="h2" size="lg" color="teal.300">Accessories</Heading>
-          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4}>
-            <Image src={galleryImage5} alt="Accessories" borderRadius="md" />
+          <Box boxSize="sm" bg="gray.700" borderRadius="md" mt={4} p={4} position="relative">
+          <Image src={galleryImage5} alt="Accessories" borderRadius="md" />
+          <Image src={logoSleeve} alt="Logo on Sleeve" position="absolute" bottom="10px" right="10px" boxSize="1in" />
           </Box>
         </Box>
       </SimpleGrid>
