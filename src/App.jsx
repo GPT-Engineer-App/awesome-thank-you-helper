@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Link, Stack, IconButton, useDisclosure } from "@chakra-ui/react";
+import { Box, Flex, Heading, Link, Stack, IconButton, useDisclosure, Image } from "@chakra-ui/react";
 import { FaBars, FaTimes, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import { Route, BrowserRouter as Router, Routes, Link as RouterLink } from "react-router-dom";
 import Index from "./pages/Index.jsx";
@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <Box bg="teal.500" px={4} py={2}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
-        <Heading as="h1" size="lg" color="white">Knock Streetwear</Heading>
+        <Image src="/images/knock-streetwear-logo.png" alt="Knock Streetwear Logo" boxSize="50px" />
         <IconButton
           size="md"
           icon={isOpen ? <FaTimes /> : <FaBars />}
