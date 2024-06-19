@@ -8,6 +8,8 @@ import Womens from "./pages/Womens.jsx";
 import BackgroundMusic from "./components/BackgroundMusic.jsx"; // Import BackgroundMusic component
 import SubscribeForm from "./components/SubscribeForm.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import About from "./pages/About.jsx";
+import BrandStory from "./pages/BrandStory.jsx";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -29,6 +31,7 @@ const NavBar = () => {
           <Link as={RouterLink} to="/shop" px={2} color="white">Shop</Link>
           <Link as={RouterLink} to="/mens" px={2} color="white">Men's</Link>
           <Link as={RouterLink} to="/womens" px={2} color="white">Women's</Link>
+          <Link as={RouterLink} to="/brand-story" px={2} color="white">Our Story</Link>
           <Flex alignItems="center">
             <Link href="https://www.facebook.com" isExternal px={2} color="white">
               <FaFacebook size="24px" />
@@ -69,6 +72,8 @@ function App() {
         <Route path="/mens" element={<Mens />} />
         <Route path="/womens" element={<Womens />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/brand-story" element={<BrandStory />} />
       </Routes>
     </Router>
   );

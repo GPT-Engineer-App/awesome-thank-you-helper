@@ -8,10 +8,34 @@ const colors = {
     900: "#1a365d",
     800: "#153e75",
     700: "#2a69ac",
+    600: "#1e4a7a",
+    500: "#2b6cb0",
+    400: "#3182ce",
+    300: "#63b3ed",
+    200: "#90cdf4",
+    100: "#bee3f8",
+    50: "#ebf8ff",
+  },
+  accent: {
+    900: "#7b341e",
+    800: "#9c4221",
+    700: "#c05621",
+    600: "#dd6b20",
+    500: "#ed8936",
+    400: "#f6ad55",
+    300: "#fbd38d",
+    200: "#feebc8",
+    100: "#fffaf0",
+    50: "#fffff0",
   },
 };
 
-const theme = extendTheme({ colors });
+const fonts = {
+  heading: "'Roboto', sans-serif",
+  body: "'Open Sans', sans-serif",
+};
+
+const theme = extendTheme({ colors, fonts });
 
 document.title = "Knock Streetwear";
 document.head.insertAdjacentHTML(
