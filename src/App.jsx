@@ -6,6 +6,8 @@ import Shop from "./pages/Shop.jsx";
 import Mens from "./pages/Mens.jsx";
 import Womens from "./pages/Womens.jsx";
 import BackgroundMusic from "./components/BackgroundMusic.jsx"; // Import BackgroundMusic component
+import SubscribeForm from "./components/SubscribeForm.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -62,10 +64,11 @@ function App() {
       <NavBar />
       <BackgroundMusic /> {/* Add BackgroundMusic component */}
       <Routes>
-        <Route exact path="/" element={<Index />} />
+        <Route exact path="/" element={<><Index /><SubscribeForm /></>} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/mens" element={<Mens />} />
         <Route path="/womens" element={<Womens />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );
