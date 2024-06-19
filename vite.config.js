@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 import minifyHtml from 'vite-plugin-minify';
 
 export default defineConfig({
-  plugins: [react(), minifyHtml()]
+  plugins: [react(), minifyHtml()],
 });
