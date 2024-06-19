@@ -23,6 +23,18 @@ const PrivacyPolicy = () => (
     <Text>
       If you have any questions about this privacy policy, please contact us at support@knockstreetwear.com.
     </Text>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Privacy Policy",
+        "description": "Your privacy is important to us. This privacy policy explains how we collect, use, and protect your information.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Knock Streetwear"
+        }
+      })}
+    </script>
   </Box>
 );
 
