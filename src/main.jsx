@@ -21,12 +21,12 @@ document.head.insertAdjacentHTML(
   <meta name="keywords" content="streetwear, fashion, men's fashion, women's fashion, Knock Streetwear">
   <meta property="og:title" content="Knock Streetwear">
   <meta property="og:description" content="Discover our exclusive collection of streetwear.">
-  <meta property="og:image" content="/images/branding-image.jpg">
+  <meta property="og:image" content="/images/branding-image.jpg" alt="Knock Streetwear Branding Image">
   <meta property="og:url" content="https://www.knockstreetwear.com">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Knock Streetwear">
   <meta name="twitter:description" content="Discover our exclusive collection of streetwear.">
-  <meta name="twitter:image" content="/images/branding-image.jpg">
+  <meta name="twitter:image" content="/images/branding-image.jpg" alt="Knock Streetwear Branding Image">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

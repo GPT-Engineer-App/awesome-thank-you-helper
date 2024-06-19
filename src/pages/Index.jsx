@@ -30,6 +30,28 @@ const Index = () => {
           ]
         })}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Knock Streetwear T-Shirt",
+          "image": "https://www.knockstreetwear.com/images/tshirt.jpg",
+          "description": "High-quality streetwear t-shirt from Knock Streetwear.",
+          "sku": "12345",
+          "brand": {
+            "@type": "Brand",
+            "name": "Knock Streetwear"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://www.knockstreetwear.com/shop/tshirt",
+            "priceCurrency": "USD",
+            "price": "29.99",
+            "itemCondition": "https://schema.org/NewCondition",
+            "availability": "https://schema.org/InStock"
+          }
+        })}
+      </script>
     </Container>
   );
 };

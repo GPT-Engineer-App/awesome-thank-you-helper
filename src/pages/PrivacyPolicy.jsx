@@ -35,6 +35,18 @@ const PrivacyPolicy = () => (
         }
       })}
     </script>
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Knock Streetwear Products",
+        "description": "High-quality streetwear products from Knock Streetwear.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Knock Streetwear"
+        }
+      })}
+    </script>
   </Box>
 );
 
