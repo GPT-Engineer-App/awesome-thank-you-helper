@@ -3,6 +3,8 @@ import { FaBars, FaTimes, FaFacebook, FaInstagram, FaTwitter } from 'react-icons
 import { Route, BrowserRouter as Router, Routes, Link as RouterLink } from "react-router-dom";
 import Index from "./pages/Index.jsx";
 import Shop from "./pages/Shop.jsx";
+import Mens from "./pages/Mens.jsx";
+import Womens from "./pages/Womens.jsx";
 import BackgroundMusic from "./components/BackgroundMusic.jsx"; // Import BackgroundMusic component
 
 const NavBar = () => {
@@ -23,6 +25,8 @@ const NavBar = () => {
           <Link as={RouterLink} to="/" px={2} color="white">Home</Link>
           <Link as={RouterLink} to="/about" px={2} color="white">About</Link>
           <Link as={RouterLink} to="/shop" px={2} color="white">Shop</Link>
+          <Link as={RouterLink} to="/mens" px={2} color="white">Men's</Link>
+          <Link as={RouterLink} to="/womens" px={2} color="white">Women's</Link>
           <Flex alignItems="center">
             <Link href="https://www.facebook.com" isExternal px={2} color="white">
               <FaFacebook size="24px" />
@@ -43,6 +47,8 @@ const NavBar = () => {
             <Link as={RouterLink} to="/" onClick={onClose}>Home</Link>
             <Link as={RouterLink} to="/about" onClick={onClose}>About</Link>
             <Link as={RouterLink} to="/shop" onClick={onClose}>Shop</Link>
+            <Link as={RouterLink} to="/mens" onClick={onClose}>Men's</Link>
+            <Link as={RouterLink} to="/womens" onClick={onClose}>Women's</Link>
           </Stack>
         </Box>
       ) : null}
@@ -58,6 +64,8 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/mens" element={<Mens />} />
+        <Route path="/womens" element={<Womens />} />
       </Routes>
     </Router>
   );
