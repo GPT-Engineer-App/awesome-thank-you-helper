@@ -16,6 +16,20 @@ const Index = () => {
           Shop Now
         </Button>
       </VStack>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Knock Streetwear",
+          "url": "https://www.knockstreetwear.com",
+          "logo": "https://www.knockstreetwear.com/images/logo.png",
+          "sameAs": [
+            "https://www.facebook.com/knockstreetwear",
+            "https://www.instagram.com/knockstreetwear",
+            "https://www.twitter.com/knockstreetwear"
+          ]
+        })}
+      </script>
     </Container>
   );
 };

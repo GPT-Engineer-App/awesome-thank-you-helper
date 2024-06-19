@@ -60,6 +60,25 @@ const Shop = () => {
           </Box>
         </Box>
       </SimpleGrid>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Knock Streetwear Products",
+          "image": [
+            "https://www.knockstreetwear.com/images/gallery-image-1.jpg",
+            "https://www.knockstreetwear.com/images/gallery-image-2.jpg",
+            "https://www.knockstreetwear.com/images/gallery-image-3.jpg",
+            "https://www.knockstreetwear.com/images/gallery-image-4.jpg",
+            "https://www.knockstreetwear.com/images/gallery-image-5.jpg"
+          ],
+          "description": "Discover our exclusive collection of streetwear.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Knock Streetwear"
+          }
+        })}
+      </script>
     </Container>
   );
 };

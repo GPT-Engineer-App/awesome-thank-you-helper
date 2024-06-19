@@ -16,6 +16,19 @@ const Womens = () => {
           Shop Women's
         </Button>
       </VStack>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Women's Collection",
+          "image": "https://www.knockstreetwear.com/images/womens-placeholder.jpg",
+          "description": "Explore our exclusive collection of women's streetwear.",
+          "brand": {
+            "@type": "Brand",
+            "name": "Knock Streetwear"
+          }
+        })}
+      </script>
     </Container>
   );
 };
