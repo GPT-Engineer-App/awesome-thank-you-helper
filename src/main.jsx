@@ -3,39 +3,25 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-const colors = {
-  brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
-    600: "#1e4a7a",
-    500: "#2b6cb0",
-    400: "#3182ce",
-    300: "#63b3ed",
-    200: "#90cdf4",
-    100: "#bee3f8",
-    50: "#ebf8ff",
+const theme = extendTheme({
+  colors: {
+    brand: {
+      900: "#1a365d",
+      800: "#153e75",
+      700: "#2a69ac",
+      600: "#319795",
+      500: "#38B2AC",
+      400: "#4FD1C5",
+      300: "#81E6D9",
+      200: "#B2F5EA",
+      100: "#E6FFFA",
+    },
   },
-  accent: {
-    900: "#7b341e",
-    800: "#9c4221",
-    700: "#c05621",
-    600: "#dd6b20",
-    500: "#ed8936",
-    400: "#f6ad55",
-    300: "#fbd38d",
-    200: "#feebc8",
-    100: "#fffaf0",
-    50: "#fffff0",
+  fonts: {
+    heading: "Roboto, sans-serif",
+    body: "Roboto, sans-serif",
   },
-};
-
-const fonts = {
-  heading: "'Roboto', sans-serif",
-  body: "'Open Sans', sans-serif",
-};
-
-const theme = extendTheme({ colors, fonts });
+});
 
 document.title = "Knock Streetwear";
 document.head.insertAdjacentHTML(
